@@ -3,6 +3,11 @@
 A Focus Cell-style add-in for **Microsoft Excel 2021 on Windows**.
 It highlights the active cell's row and/or column using a click-through transparent overlay, without modifying workbook formatting or contents.
 
+
+<img width="613" height="642" alt="스크린샷 2026-08-17 162636" src="https://github.com/user-attachments/assets/b9b2e402-d64c-443a-9495-4cd0c92e3868" />
+
+
+
 **한국어:** [README_KO.md](README_KO.md)  
 **English:** [README_EN.md](README_EN.md)
 
@@ -10,13 +15,8 @@ It highlights the active cell's row and/or column using a click-through transpar
 
 - Transparent overlay: does not write shapes, fills, or conditional formatting into the workbook
 - Active cell itself remains transparent while the row/column is highlighted
-- Accurate worksheet viewport detection using Excel screen hit-testing
-- Excludes sheet tabs, horizontal/vertical scroll bars, headers, and pane split areas
-- Supports Excel zoom changes, window resize/move, merged cells, and frozen/split panes
-- Hides the overlay while the Excel window is being moved/resized
 - View-tab ribbon with **Focus Cell** toggle and **Settings** button
 - Configurable color, opacity, row/column mode, selected-cell border, and refresh interval
-- One source project builds both Korean and English editions
 
 ## Build
 
