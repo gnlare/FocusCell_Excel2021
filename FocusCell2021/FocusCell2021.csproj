@@ -1,0 +1,52 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <RootNamespace>FocusCell2021</RootNamespace>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+    <Platforms>AnyCPU;x86;x64</Platforms>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <Version>1.0.0</Version>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+
+    <!-- Visual Studio's normal Build defaults to the Korean edition.
+         build_release.cmd explicitly builds both KR and EN from this same project. -->
+    <FocusLanguage Condition="'$(FocusLanguage)' == ''">KR</FocusLanguage>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(FocusLanguage)' == 'KR'">
+    <AssemblyName>FocusCell2021_KR</AssemblyName>
+    <ExcelAddInFileName>FocusCell2021_KR</ExcelAddInFileName>
+    <ExcelAddInName>FocusCell2021 KR</ExcelAddInName>
+    <DefineConstants>$(DefineConstants);FOCUS_LANG_KR</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(FocusLanguage)' == 'EN'">
+    <AssemblyName>FocusCell2021_EN</AssemblyName>
+    <ExcelAddInFileName>FocusCell2021_EN</ExcelAddInFileName>
+    <ExcelAddInName>FocusCell2021 EN</ExcelAddInName>
+    <DefineConstants>$(DefineConstants);FOCUS_LANG_EN</DefineConstants>
+  </PropertyGroup>
+
+  <Target Name="ValidateFocusLanguage" BeforeTargets="BeforeBuild"
+          Condition="'$(FocusLanguage)' != 'KR' and '$(FocusLanguage)' != 'EN'">
+    <Error Text="FocusLanguage must be KR or EN. Example: /p:FocusLanguage=EN" />
+  </Target>
+
+  <ItemGroup>
+    <!-- Required by C# dynamic late-binding on .NET Framework 4.8. -->
+    <Reference Include="Microsoft.CSharp" />
+    <PackageReference Include="ExcelDna.AddIn" Version="1.9.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\FocusCellBlue.png" />
+  </ItemGroup>
+</Project>
