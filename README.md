@@ -1,10 +1,10 @@
-# FocusCell2021 1.0
+# Focus Cell 2021 1.0
 
 A Focus Cell-style add-in for **Microsoft Excel 2021 on Windows**.
 It highlights the active cell's row and/or column using a click-through transparent overlay, without modifying workbook formatting or contents.
 
 
-<img width="613" height="642" alt="스크린샷 2026-08-17 162636" src="https://github.com/user-attachments/assets/b9b2e402-d64c-443a-9495-4cd0c92e3868" />
+<img width="306" height="321" alt="스크린샷 2026-08-17 162636" src="https://github.com/user-attachments/assets/b9b2e402-d64c-443a-9495-4cd0c92e3868" />
 
 
 
