@@ -14,6 +14,8 @@ It highlights the active cell's row and/or column using a click-through transpar
 **한국어:** [README_KO.md](README_KO.md)  
 **English:** [README_EN.md](README_EN.md)
 
+
+
 ## Highlights
 
 - 선택 셀의 행/열 강조
@@ -27,6 +29,8 @@ It highlights the active cell's row and/or column using a click-through transpar
 - Active cell itself remains transparent while the row/column is highlighted
 - View-tab ribbon with **Focus Cell** toggle and **Settings** button
 - Configurable color, opacity, row/column mode, selected-cell border, and refresh interval
+
+
 
 ## Install in Excel
 
@@ -42,6 +46,8 @@ It highlights the active cell's row and/or column using a click-through transpar
 3. At the bottom, choose **Excel Add-ins** and click **Go**.
 4. Click **Browse** and select the appropriate XLL from `INSTALL\EN`.
 5. Open the **View** tab and use **Focus Cell**.
+
+
 
 ## Version
 
