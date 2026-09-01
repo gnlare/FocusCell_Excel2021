@@ -15,7 +15,7 @@ It highlights the active cell's row and/or column using a click-through transpar
 **English:** [README_EN.md](README_EN.md)
 
 
-<br>
+<br></br>
 ## Highlights
 
 - 선택 셀의 행/열 강조
@@ -31,7 +31,7 @@ It highlights the active cell's row and/or column using a click-through transpar
 - Configurable color, opacity, row/column mode, selected-cell border, and refresh interval
 
 
-<br>
+<br></br>
 ## Install in Excel
 
 1. Excel 실행
@@ -48,7 +48,7 @@ It highlights the active cell's row and/or column using a click-through transpar
 5. Open the **View** tab and use **Focus Cell**.
 
 
-<br>
+<br></br>
 ## Version
 
 Current public version: **1.0**
