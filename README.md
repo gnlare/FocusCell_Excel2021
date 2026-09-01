@@ -1,6 +1,6 @@
 # Focus Cell 2021 1.0
 
-Microsoft 365의 Focus Cell과 비슷한 행/열 강조 기능을 제공하는 Excel-DNA 기반 XLL 애드인입니다.
+엑셀 2021에 오피스 365의 Focus Cell과 비슷한 행/열 강조 기능을 제공하는 애드인입니다.
 워크북에 셀 색상, Shape, 조건부서식 등을 기록하지 않고 Excel 화면 위에 클릭이 통과되는 투명 오버레이를 표시합니다.
 
 A Focus Cell-style add-in for **Microsoft Excel 2021 on Windows**.
@@ -27,14 +27,6 @@ It highlights the active cell's row and/or column using a click-through transpar
 - Active cell itself remains transparent while the row/column is highlighted
 - View-tab ribbon with **Focus Cell** toggle and **Settings** button
 - Configurable color, opacity, row/column mode, selected-cell border, and refresh interval
-
-## Build
-
-Requirements:
-
-- Windows
-- Microsoft Excel 2021
-- .NET Framework 4.8 Developer Pack
 
 ## Install in Excel
 
