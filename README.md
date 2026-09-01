@@ -45,10 +45,17 @@ Use the XLL containing `64` for 64-bit Excel. Use the XLL without `64` for 32-bi
 
 ## Install in Excel
 
+1. Excel 실행
+2. 파일 > 옵션 > 추가 기능
+3. 하단 관리: Excel 추가 기능 선택 후 이동
+4. 찾아보기 선택
+5. INSTALL\KR 폴더의 XLL 파일 선택
+6. 보기 탭에서 Focus Cell 확인
+
 1. Open Excel.
 2. Go to **File > Options > Add-ins**.
 3. At the bottom, choose **Excel Add-ins** and click **Go**.
-4. Click **Browse** and select the appropriate XLL from `INSTALL\KR` or `INSTALL\EN`.
+4. Click **Browse** and select the appropriate XLL from `INSTALL\EN`.
 5. Open the **View** tab and use **Focus Cell**.
 
 ## GitHub Actions
